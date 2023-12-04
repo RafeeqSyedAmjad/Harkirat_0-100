@@ -62,7 +62,7 @@ const addedNumber = Add(Number1, Number2);
 console.log(`The final answer after adding two number:${addedNumber}`)
 
 
-// Question - 3: Input principal amount, input rate of interest, input number of years, Then Calculate simple interest.
+// Question - 4: Input principal amount, input rate of interest, input number of years, Then Calculate simple interest.
 
 function calculateSimpleInterest(principal,rate,time){
     const interest = (principal * rate * time) / 100;
@@ -77,6 +77,42 @@ const numberOfYears = 2; // Replace this with the number of years
 const simpleInterest = calculateSimpleInterest(principalAmount, interestRate, numberOfYears);
 
 console.log(`the Final Simple Interest is : ${ simpleInterest }`)
+
+// Question-5:    WAP to input n numbers and log the average of those number.
+
+function calulateAverage(numbers){
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++){
+        sum += numbers[i];
+    }
+    const average = sum / numbers.length;
+    return average;  
+}
+
+// Example Usage:
+
+const numbers = [5,5]
+const average = calulateAverage(numbers);
+console.log(`the average is : ${average}`);
+
+
+// Question-6:    WAP to calculate total marks in two subject and then calculate percentage.
+
+ function CalculateMarksAndPercentage(FirstSubject,SecondSubject){
+    totalMarks = FirstSubject + SecondSubject
+    totalPossibleMarks = 200
+     Percentage = (totalMarks / totalPossibleMarks )* 100;
+     return percentage;
+ }
+
+ // Example Usage:
+
+ FirstSubject = 80;
+ SecondSubject = 80;
+
+
+
+
 
 
 
