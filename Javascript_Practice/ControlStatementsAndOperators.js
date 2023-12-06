@@ -179,3 +179,143 @@ console.log("After j *= 2:", j);
 
 j /= 4; // Divide and assign operator (/=) divides x by 4 and assigns the result back to x
 console.log("After j /= 4:", j);
+
+
+
+// Assignment operator are += -= *= /=
+
+// Problem 3: Write a JavaScript program to compare two numbers and log whether they are equal, greater, or lesser.
+
+function compareNumbers(num1, num2) {
+    if (num1 === num2) {
+        console.log("The numbers are equal.");
+    } else if (num1 > num2) {
+        console.log("The first number is greater than the second number.");
+    } else {
+        console.log("The first number is lesser than the second number.");
+    }
+}
+
+// Example usage:
+const num1 = 10;
+const num2 = 5;
+
+compareNumbers(num1, num2);
+
+// // Problem 4: Write a JavaScript program to demonstrate logical operators in a conditional statement.
+
+// logical oeprators && || !
+
+function evaluatecondition(a,b,c) {
+    if (a>b && c !== 0){
+        console.log("Condition met: a is greater than b and c is not equal to zero");
+    }
+    else if (a==b || c<0){
+        console.log("Condition met: a is equal to b or c is greater than zero")
+    }
+    else if (!(a < 0)){
+        console.log("condition met: a is not less than zero")
+    }
+    else {
+        console.log("condition not met")
+    }
+
+}
+
+// Example usage:
+const numberA = 10;
+const numberB = 5;
+const numberC = -3;
+
+evaluatecondition(numberA, numberB, numberC);
+
+// Problem 5: Write a JavaScript program to perform bitwise operations on two numbers.
+
+// bitwise operations (AND,OR,XOR,NOT)
+
+function performBitwiseOperations(a,b) {
+    console.log(`Bitwise AND: ${a & b}`);
+    console.log(`Bitwise OR: ${a | b}`);
+    console.log(`Bitwise XOR: ${a ^ b}`);
+    console.log(`Bitwise NOT for a: ${~a}`);
+    console.log(`Bitwise NOT for b: ${~b}`);
+    
+}
+
+// Example usage:
+const number5 = 5;
+const number6 = 3;
+
+performBitwiseOperations(number5, number6);
+
+// Problem 6: Write a JavaScript program to use the ternary operator to determine the larger of two numbers.
+
+function findLargestNumber(a,b){
+    const LargestNumber = a > b ? a : b;
+    console.log(`The larger number is :${LargestNumber}`);
+}
+
+//Example Usage
+const number7 = 11;
+const number8 = 12;
+
+findLargestNumber(number7, number8);
+
+// Problem 7: Write a JavaScript program to demonstrate type operators on different data types.
+
+function demonstrateTypeOperators(value) {
+    console.log(`Value: ${value}`);
+    console.log(`Type of value: ${typeof value}`);
+    console.log(`Is it a number? ${typeof value === 'number'}`);
+    console.log(`Is it a string? ${typeof value === 'string'}`);
+    console.log(`Is it a boolean? ${typeof value === 'boolean'}`);
+    console.log(`Is it undefined? ${typeof value === 'undefined'}`);
+    console.log(`Is it null? ${value === null}`);
+    console.log(`Is it an object? ${typeof value === 'object' && value !== null}`);
+    console.log(`Is it an array? ${Array.isArray(value)}`);
+    console.log(`Is it a function? ${typeof value === 'function'}`);
+}
+
+// Example usage:
+const numberValue = 10;
+const stringValue = 'Hello';
+const booleanValue = true;
+const undefinedValue = undefined;
+const nullValue = null;
+const objectValue = { key: 'value' };
+const arrayValue = [1, 2, 3];
+const functionValue = function () { };
+
+demonstrateTypeOperators(numberValue);
+demonstrateTypeOperators(stringValue);
+demonstrateTypeOperators(booleanValue);
+demonstrateTypeOperators(undefinedValue);
+demonstrateTypeOperators(nullValue);
+demonstrateTypeOperators(objectValue);
+demonstrateTypeOperators(arrayValue);
+demonstrateTypeOperators(functionValue);
+
+// Problem 8: Write a JavaScript program to use string operators to concatenate two strings.
+
+function concatenateStrings(str1, str2) {
+    const concatenatedString = str1 + ' ' + str2;
+    console.log(`Concatenated String: ${concatenatedString}`);
+}
+
+// Example usage:
+const string1 = 'Hello';
+const string2 = 'World';
+
+concatenateStrings(string1, string2);
+
+// Problem 9: Write a JavaScript program to demonstrate the use of the typeof operator on different variables.
+
+// Problem 10: Write a JavaScript program to use the in operator to check if a property exists in an object.
+
+const obj6 = {
+    Name:'Rafeeq',
+    age:22
+}
+
+console.log('Name'in obj6)
+console.log('height' in obj6)
