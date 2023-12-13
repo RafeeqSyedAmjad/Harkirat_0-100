@@ -34,7 +34,6 @@ console.log(`The result of ${baseNumber} raised to the power of ${exponentNumber
 
 // Question - 6:  Write a function that takes a number as a parameter and returns true if it's a prime number and false otherwise.
 
-
 // Question - 7:  Write a function that has a local variable and another function that has a global variable.Demonstrate the difference between global and local scope.
 
 // Question - 8:  Write a function that returns another function. The inner function should have access to a variable from the outer function.
