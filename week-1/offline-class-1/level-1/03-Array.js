@@ -6,6 +6,7 @@
 // Run each function to see the output, play and learn by doing.
 
 // push()
+
 function pushExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -61,22 +62,44 @@ function forEachExample(arr) {
 forEachExample([1, 2, 3]);
 
 // map()
-function mapExample(arr) {
-  console.log("Original Array:", arr);
+// function mapExample(arr) {
+//   console.log("Original Array:", arr);
 
-  let newArr = arr.map(function(item) {
-    return item * 2;
+//   let newArr = arr.map(function(item) {
+//     return item * 2;
+//   });
+//   console.log("After map:", newArr);
+// }
+// mapExample([1, 2, 3]);
+
+function mapExample(arr){
+  console.log("Original Array:",arr);
+
+  let newArr = arr.map(function(item){
+    return item * 2
   });
-  console.log("After map:", newArr);
+  console.log("After map:",newArr);
+
 }
-mapExample([1, 2, 3]);
+mapExample([1,2,3]);
 
-// filter()
-function filterExample(arr) {
-  console.log("Original Array:", arr);
+// // filter()
+// function filterExample(arr) {
+//   console.log("Original Array:", arr);
 
-  let newArr = arr.filter(function(item) {
+//   let newArr = arr.filter(function(item) {
+//     return item > 3;
+//   });
+//   console.log("After filter:", newArr);
+// }
+// filterExample([1, 2, 3, 4, 5]);
+
+function filterExample(arr){
+  console.log("Original Array:",arr);
+
+  let newArr = arr.filter(function(item){
     return item > 3;
+
   });
   console.log("After filter:", newArr);
 }

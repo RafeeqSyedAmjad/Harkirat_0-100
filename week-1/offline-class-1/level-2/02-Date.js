@@ -16,10 +16,10 @@ function dateMethods() {
 
   currentDate.setMonth(5); // Setting month to June (zero-indexed)
   console.log("After setMonth:", currentDate);
-
+  
   // Getting and setting time in milliseconds since 1970
   console.log("Time in milliseconds since 1970:", currentDate.getTime());
-
+  
   const newDate = new Date(2023, 8, 15); // Creating a new date
   console.log("New Date:", newDate);
 }
