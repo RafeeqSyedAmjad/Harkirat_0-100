@@ -23,7 +23,17 @@ function App() {
         </thead>
         <tbody>
           {
-            EmployeeData.map((item,index))
+            EmployeeData.map((items,index)=>{ // here your data is inside Items
+              return(
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{items.id}</td>
+                  <td>{items.firstName}</td>
+                  <td>{items.lastName}</td>
+                  <td>{items.age}</td>
+                </tr>
+              )
+            })
           }
         </tbody>
       </table>
